@@ -1,0 +1,62 @@
+.tokenomics {
+    .chart {
+        position: relative;
+
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            color: white;
+            font-family: 'Raleway';
+            font-weight: 800;
+            font-size: 110px;
+            line-height: 41.09px;
+        }
+    }
+
+    .content {
+        .token {
+            .progress {
+                background-color: #2B2B2B;
+                height: 32px;
+                border-radius: 5px;
+                .bg-success {
+                    background-color: #ACEB2F!important;
+                }
+    
+                .bg-info {
+                    background-color: #FFFFFF!important;
+                }
+    
+                .bg-warning {
+                    background-color: #7F8389!important;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .chart {
+        position: relative;
+
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            color: white;
+            font-family: 'Raleway';
+            font-weight: 800;
+            font-size: 35px!important;
+            line-height: 41.09px;
+        }
+    }
+
+    .content {
+        .token {
+            .progress {
+                height: 14.61px!important;
+            }
+        }    
+    }
+}

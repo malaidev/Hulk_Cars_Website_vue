@@ -1,0 +1,553 @@
+.landing {
+    overflow: hidden;
+    position: relative;
+
+    .full-width {
+        background-color: #171819;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        
+        .grid-linear {
+            display: block;
+            float: left;
+            position: relative;
+            width: 25%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .grid-linear::before {
+            position: absolute;
+            width: 1px;
+            background-color: rgba(253,252,248,.15);
+            content: "";
+            height: 100%;
+        }
+    }
+
+    .grow-capital {
+        width: 100%;
+        height: 590.75px;
+        background-image: url(../images/cars.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+
+        h1 {
+            font-size: 65px;
+            line-height: 84.5px;
+            font-family: "Montserrat";
+            font-weight: 300
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 26px;
+            font-family: "Montserrat";
+            font-weight: 300;
+            color: #888888
+        }
+
+        button {
+            padding: 18px 34px;
+            border: 2px solid #ACEB2F;
+            border-radius: 26px;
+            background: transparent;
+            outline: none;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: "Open Sans";
+            line-height: 16.3px;
+            letter-spacing: 0.91px;
+            color: white;
+        }
+        button:hover {
+            box-shadow: inset 500px 0 0 0 #ACEB2F;
+            transition: box-shadow 0.5s ease-in-out;
+        }
+    }
+
+    .about-hulk {
+        margin-top: 119px;
+        margin-bottom: 119px;
+        h1 {
+            font-size: 45px;
+            font-weight: 700;
+            line-height: 58.5px;
+            font-family: "Montserrat";
+            color: #FFFFFF;
+        }
+
+        i {
+            margin-top: 15px;
+            font-size: 18px;
+            font-family: "Open Sans";
+            line-height: 28px;
+            color: #FFFFFF;
+        }
+
+        p {
+            margin-top: 23.5px;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: "Open Sans";
+            color: #888888;
+            line-height: 26px;
+        }
+
+        .roles {
+            font-size: 14px;
+            font-weight: 400;
+            color: #FFFFFF;
+            font-family: "Open Sans";
+            line-height: 26px;
+            margin-top: 7px;
+        }
+    }
+
+    .focus-innovation {
+        width: 100%;
+        height: 870.69px;
+        background-image: url(../images/car2.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+
+        h1 {
+            font-size: 70px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 100!important;
+            line-height: 70px;
+            color: #FFFFFF;
+        }
+
+        button {
+            width: 209px;
+            height: 57px;
+            outline: none;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            font-size: 16px;
+            line-height: 32px;
+            font-family: "Lato";
+            font-weight: 500;
+            margin-top: 20px;
+
+            svg {
+                position: absolute;
+                right: 7px;
+            }
+        }
+
+        button.btn-whitepaper {
+            color: #211E1E;
+            background-color: #ACEB2F;
+            border: 1px solid #ACEB2F;
+        }
+        .btn-whitepaper span {
+            background: #ACEB2F;
+            background: linear-gradient(0deg, #ACEB2F 0%, #ACEB2F 100%);
+            display: block;
+            position: absolute;
+            width: 209px;
+            height: 57px;
+            box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+             7px 7px 20px 0px rgba(0,0,0,.1),
+             4px 4px 5px 0px rgba(0,0,0,.1);
+            border-radius: 5px;
+            margin:0;
+            text-align: center;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all .3s;
+            transition: all .3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-whitepaper span:nth-child(1) {
+            box-shadow:
+                -7px -7px 20px 0px #fff9,
+                -4px -4px 5px 0px #fff9,
+                7px 7px 20px 0px #0002,
+                4px 4px 5px 0px #0001;
+            -webkit-transform: rotateX(90deg);
+            -moz-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+            -webkit-transform-origin: 50% 50% -20px;
+            -moz-transform-origin: 50% 50% -20px;
+            transform-origin: 50% 50% -20px;
+        }
+        .btn-whitepaper span:nth-child(2) {
+            -webkit-transform: rotateX(0deg);
+            -moz-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+            -webkit-transform-origin: 50% 50% -20px;
+            -moz-transform-origin: 50% 50% -20px;
+            transform-origin: 50% 50% -20px;
+        }
+        .btn-whitepaper:hover span:nth-child(1) {
+            box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+                7px 7px 20px 0px rgba(0,0,0,.1),
+                4px 4px 5px 0px rgba(0,0,0,.1);
+            -webkit-transform: rotateX(0deg);
+            -moz-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+        }
+        .btn-whitepaper:hover span:nth-child(2) {
+            box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+                7px 7px 20px 0px rgba(0,0,0,.1),
+                4px 4px 5px 0px rgba(0,0,0,.1);
+            color: transparent;
+            -webkit-transform: rotateX(-90deg);
+            -moz-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+        }
+
+        button.btn-buy-hulk {
+            background-color: #A19F9F;
+            color: #FFFFFF;
+            border: 1px solid #FFFFFF;
+        }
+        .btn-buy-hulk span {
+            background: #A19F9F;
+            background: linear-gradient(0deg, #A19F9F 0%, #A19F9F 100%);
+            display: block;
+            position: absolute;
+            width: 209px;
+            height: 57px;
+            box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+             7px 7px 20px 0px rgba(0,0,0,.1),
+             4px 4px 5px 0px rgba(0,0,0,.1);
+            border-radius: 5px;
+            margin:0;
+            text-align: center;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all .3s;
+            transition: all .3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-buy-hulk span:nth-child(1) {
+            box-shadow:
+                -7px -7px 20px 0px #fff9,
+                -4px -4px 5px 0px #fff9,
+                7px 7px 20px 0px #0002,
+                4px 4px 5px 0px #0001;
+            -webkit-transform: rotateX(90deg);
+            -moz-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+            -webkit-transform-origin: 50% 50% -20px;
+            -moz-transform-origin: 50% 50% -20px;
+            transform-origin: 50% 50% -20px;
+        }
+        .btn-buy-hulk span:nth-child(2) {
+            -webkit-transform: rotateX(0deg);
+            -moz-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+            -webkit-transform-origin: 50% 50% -20px;
+            -moz-transform-origin: 50% 50% -20px;
+            transform-origin: 50% 50% -20px;
+        }
+        .btn-buy-hulk:hover span:nth-child(1) {
+            box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+                7px 7px 20px 0px rgba(0,0,0,.1),
+                4px 4px 5px 0px rgba(0,0,0,.1);
+            -webkit-transform: rotateX(0deg);
+            -moz-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+        }
+        .btn-buy-hulk:hover span:nth-child(2) {
+            box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+                7px 7px 20px 0px rgba(0,0,0,.1),
+                4px 4px 5px 0px rgba(0,0,0,.1);
+            color: transparent;
+            -webkit-transform: rotateX(-90deg);
+            -moz-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+        }
+
+        button.btn-nft-collection {
+            background-color: #21232A;
+            color: #FFFFFF;
+            border: 1px solid #21232A;
+        }
+        .btn-nft-collection span {
+            background: #21232A;
+            background: linear-gradient(0deg, #21232A 0%, #21232A 100%);
+            display: block;
+            position: absolute;
+            width: 209px;
+            height: 57px;
+            box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+             7px 7px 20px 0px rgba(0,0,0,.1),
+             4px 4px 5px 0px rgba(0,0,0,.1);
+            border-radius: 5px;
+            margin:0;
+            text-align: center;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all .3s;
+            transition: all .3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-nft-collection span:nth-child(1) {
+            box-shadow:
+                -7px -7px 20px 0px #fff9,
+                -4px -4px 5px 0px #fff9,
+                7px 7px 20px 0px #0002,
+                4px 4px 5px 0px #0001;
+            -webkit-transform: rotateX(90deg);
+            -moz-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+            -webkit-transform-origin: 50% 50% -20px;
+            -moz-transform-origin: 50% 50% -20px;
+            transform-origin: 50% 50% -20px;
+        }
+        .btn-nft-collection span:nth-child(2) {
+            -webkit-transform: rotateX(0deg);
+            -moz-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+            -webkit-transform-origin: 50% 50% -20px;
+            -moz-transform-origin: 50% 50% -20px;
+            transform-origin: 50% 50% -20px;
+        }
+        .btn-nft-collection:hover span:nth-child(1) {
+            box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+                7px 7px 20px 0px rgba(0,0,0,.1),
+                4px 4px 5px 0px rgba(0,0,0,.1);
+            -webkit-transform: rotateX(0deg);
+            -moz-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+        }
+        .btn-nft-collection:hover span:nth-child(2) {
+            box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+                7px 7px 20px 0px rgba(0,0,0,.1),
+                4px 4px 5px 0px rgba(0,0,0,.1);
+            color: transparent;
+            -webkit-transform: rotateX(-90deg);
+            -moz-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+        }
+
+    }
+
+    .introduction-hulk {
+        background: #0E0D0D;
+        padding: 163px 0px 163px;
+
+        .title {
+            font-size: 45px;
+            font-family: "Montserrat";
+            font-weight: 700;
+            line-height: 58.5px;
+            color: #FFFFFF;
+        }
+
+        .sub-title {
+            font-size: 18px;
+            font-family: "Open Sans";
+            line-height: 28px;
+            color: white;
+        }
+
+        .desc {
+            margin-top: 39.5px;
+            font-size: 14px;
+            font-family: "Open Sans";
+            font-weight: 400;
+            line-height: 26px;
+            color: #888888;
+        }
+
+        .stores {
+            display: flex;
+            gap: 40px;
+
+            button {
+                width: 194px;
+                height: 58px;
+                outline: none;
+                border: none;
+                border-radius: 0;
+                background-color: transparent;
+            }
+    
+            button.btn-play-store {
+                background-image: url(../images/h1-img-9.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+    
+            button.btn-apple-store {
+                background-image: url(../images/h1-img-10.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+        }
+    }
+
+}
+@media(max-width: 1024px) {
+    .landing {
+        .grow-capital {
+            height: 590.75px;
+            .content {
+                width: 100%;
+            }
+
+            .logo {
+                div:nth-child(1) {
+                    margin-top: 5rem;
+                }
+                div:nth-child(2) {
+                    margin-top: -5rem;
+                }
+                div:nth-child(3) {
+                    margin-top: 5rem;
+                }
+            }
+        }
+        .about-hulk {
+            .logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 384px;
+                    height: 264px;
+                }
+            }
+        }
+        .focus-innovation {
+            height: auto;
+            h1 {
+                font-size: 50px;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 100!important;
+                line-height: 70px;
+                color: #FFFFFF;
+            }
+        }
+        .introduction-hulk {
+            .logo {
+                justify-content: start!important;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .landing {
+        .grow-capital {
+            height: auto!important;
+
+            .logo {
+                div:nth-child(1) {
+                    margin-top: 0;
+                }
+                div:nth-child(2) {
+                    margin-top: -0;
+                }
+                div:nth-child(3) {
+                    margin-top: 0;
+                }
+            }
+        }
+        .focus-innovation {
+            height: auto;
+            h1 {
+                font-size: 50px;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 100!important;
+                line-height: 70px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+@media(max-width: 390px) {
+    .landing {
+        .grow-capital {
+            height: auto!important;
+    
+            .logo {
+                margin-top: 3rem!important;
+                div:nth-child(1) {
+                    margin-top: 0;
+                }
+                div:nth-child(2) {
+                    margin-top: -0;
+                }
+                div:nth-child(3) {
+                    margin-top: 0;
+                }
+                h1 {
+                    font-size: 65px;
+                    font-weight: 600;
+                }
+                p {
+                    color: white;
+                }
+            }
+        }
+        .about-hulk {
+            .logo {
+                margin-top: 3rem;
+                img {
+                    width: 300px;
+                    height: 173.03px;
+                }
+            }
+        }
+        .focus-innovation {
+            height: auto;
+            .row {
+                flex-direction: row!important;
+                padding: 3rem 1rem!important;
+
+                h1 {
+                    font-size: 35px;
+                    margin: 0;
+                    line-height: 55px;
+                }
+            }
+        }
+        .introduction-hulk {
+            .logo {
+                justify-content: start!important;
+                img {
+                    // width: 65.51px;
+                    // height: 32.15px;
+                }
+            }
+
+            .content {
+                .stores {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

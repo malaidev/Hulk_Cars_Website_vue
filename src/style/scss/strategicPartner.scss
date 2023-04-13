@@ -1,0 +1,85 @@
+.strategic-partners {
+    width: 100%;
+    height: 585px;
+    background-image: url(../images/stractegic.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0px 50px;
+
+    .carousel {
+        .carousel-inner {
+            .carousel-item {
+                height: 375px;
+            }
+        }
+        .carousel-control-prev {
+            width: auto;
+            left: -40px;
+
+            span {
+                border: 1px solid white;
+                border-radius: 50%;
+                padding: 20px;
+                background-size: 50%;
+            }
+        }
+        .carousel-control-next {
+            width: auto;
+            right: -40px;
+
+            span {
+                border: 1px solid white;
+                border-radius: 50%;
+                padding: 20px;
+                background-size: 50%;
+            }
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .strategic-partners {
+        height: auto;
+        .carousel {
+            .carousel-inner {
+                .carousel-item {
+                    height: auto;
+                    .item {
+                        width: 33.3333%;
+                    }
+
+                    .sub-item {
+                        width: 33.3333%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .strategic-partners {
+        height: auto;
+        .carousel {
+            .carousel-inner {
+                .carousel-item {
+                    height: auto;
+                    .item {
+                        width: 100%;
+                    }
+
+                    .sub-item {
+                        width: 100%;
+                    }
+                }
+            }
+            .carousel-control-prev {
+                left: 0px;
+            }
+            .carousel-control-next {
+                right: 0px;
+            }
+        }
+    }
+}

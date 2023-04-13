@@ -1,0 +1,340 @@
+.roadmap {
+    .edgtf-elements-holder {
+        width: 100%;
+        display: table;
+        table-layout: fixed;
+
+        .edgtf-eh-item {
+            display: table-cell;
+            vertical-align: middle;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+
+            .edgtf-eh-item-inner {
+                .edgtf-eh-item-content {
+                    .edftf-roadmap {
+                        position: relative;
+                        display: inline-block;
+                        width: 100%;
+                        vertical-align: middle;
+                        padding: 200px 0;
+                        overflow: hidden;
+                        padding-top: 500px;
+                        padding-bottom: 240px;
+
+                        .edgtf-roadmap-line {
+                            background-color: #505050;
+                            position: relative;
+                            width: 100%;
+                            height: 3px;
+
+                            .edgtf-rl-arrow-left {
+                                display: flex;
+                                align-items: center;
+                                left: -9px;
+                                position: absolute;
+                                top: 50%;
+                                font-size: 30px;
+                                color: #ACEB2F;
+                                cursor: pointer;
+                                transform: translateY(-50%);
+                                z-index: 50;
+
+                                svg {
+                                    color: #ACEB2F;
+                                    font-size: 30px;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            .edgtf-rl-arrow-right {
+                                display: flex;
+                                align-items: center;
+                                right: -9px;
+                                position: absolute;
+                                top: 50%;
+                                font-size: 30px;
+                                color: #ACEB2F;
+                                cursor: pointer;
+                                transform: translateY(-50%);
+                                z-index: 50;
+
+                                svg {
+                                    color: #ACEB2F;
+                                    font-size: 30px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+
+                        .edgtf-roadmap-line-holder {
+                            width: 2849.95px;
+                            transition: all .2s ease-in-out;
+
+                            .edgtf-roadmap-item {
+                                position: relative;
+                                float: left;
+                                text-align: center;
+                                transform: translateY(calc(-50% - 2px));
+                                width: 356.244px;
+
+                                .edgtf-roadmap-item-circle-holder {
+                                    display: flex;
+                                    align-items: center;
+
+                                    .edgtf-roadmap-item-before-circle {
+                                        background-color: transparent;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                        width: calc(50% - 10px);
+                                        height: 3px;
+                                    }
+                                    .edgtf-roadmap-item-circle {
+                                        background-color: #505050;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                        width: 20px;
+                                        height: 20px;
+                                        box-shadow: inset 0 0 0 6px #ACEB2F;
+                                        border-radius: 50%;
+                                    }
+                                    .edgtf-roadmap-item-after-circle {
+                                        background-color: transparent;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                        width: calc(50% - 10px);
+                                        height: 3px;
+                                    }
+                                }
+
+                                .edgtf-roadmap-item-circle-holder.actived {
+                                    .edgtf-roadmap-item-before-circle {
+                                        background-color: #ACEB2F;
+                                    }
+                                    .edgtf-roadmap-item-after-circle {
+                                        background-color: #ACEB2F;
+                                    }
+                                }
+
+                                .edgtf-roadmap-item-stage-title-holder {
+                                    position: absolute;
+                                    left: 0;
+                                    width: 100%;
+
+                                    span {
+                                        color: #fff;
+                                        font-size: 20px;
+                                        font-family: "Montserrat";
+                                        font-weight: 600;
+                                    }
+                                }
+                                .edgtf-roadmap-item-stage-title-holder.down {
+                                    bottom: 32px;
+                                }
+                                .edgtf-roadmap-item-content-holder {
+                                    opacity: 1;
+                                    transform: translateY(0px);
+                                    transition: transform 0.25s ease-in-out 0.2s, opacity 0.25s ease-in-out 0.2s;
+                                    background-color: #272727;
+
+                                    position: absolute;
+                                    left: 0;
+                                    width: 100%;
+                                    text-align: left;
+                                    padding: 25px 35px 27px;
+                                    box-sizing: border-box;
+                                    background-position: center;
+                                    background-size: cover;
+                                    border-radius: 10px;
+                                    z-index: -1;
+
+                                    h1 {
+                                        margin: 0 0 14px;
+                                        color: #fff;
+                                        font-size: 20px;
+                                        font-family: 'Montserrat';
+                                        font-weight: 600;
+                                    }
+                                    div {
+                                        color: #fff;
+                                        font-size: 25px;
+                                        font-family: 'Open Sans', sans-serif;
+                                        font-weight: 300;
+                                    }
+                                }
+                                .edgtf-roadmap-item-content-holder.up {
+                                    bottom: 75px;
+                                }
+                                .edgtf-roadmap-item-content-holder.down {
+                                    top: 75px;
+                                }
+                                .edgtf-roadmap-item-content-holder.up::after {
+                                    top: 100%;
+                                    background-color: #505050;
+
+                                    content: '';
+                                    position: absolute;
+                                    left: 50%;
+                                    width: 3px;
+                                    height: 70px;
+                                    transform: translateX(-50%);
+                                    z-index: -1;
+                                }
+                                .edgtf-roadmap-item-content-holder.down::after {
+                                    bottom: 100%;
+                                    background-color: #505050;
+
+                                    content: '';
+                                    position: absolute;
+                                    left: 50%;
+                                    width: 3px;
+                                    height: 70px;
+                                    transform: translateX(-50%);
+                                    z-index: -1;
+                                }
+                            }
+                        }
+                        .edgtf-roadmap-line-holder.rightTransform {
+                            transform: translateX(-356.244px);
+                        }
+                        .edgtf-roadmap-line-holder.leftTransform {
+                            transform: translateX(0px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1512px) {
+    .roadmap {
+        .edgtf-elements-holder {
+            .edgtf-eh-item {
+                .edgtf-eh-item-inner {
+                    .edgtf-eh-item-content {
+                        .edftf-roadmap {
+                            .edgtf-roadmap-line {
+                                .edgtf-rl-arrow-left {
+
+                                }
+                                .edgtf-rl-arrow-right {
+
+                                }
+                            }
+                            .edgtf-roadmap-line-holder {
+                                .edgtf-roadmap-item {
+                                    width: 283.05px;
+                                    .edgtf-roadmap-item-circle-holder {
+                                        .edgtf-roadmap-item-before-circle {
+
+                                        }
+                                        .edgtf-roadmap-item-circle {
+
+                                        }
+                                        .edgtf-roadmap-item-after-circle {
+
+                                        }
+                                    }
+                                    .edgtf-roadmap-item-stage-title-holder {
+
+                                    }
+                                    .edgtf-roadmap-item-content-holder {
+
+                                    }
+                                }
+                            }
+                            .edgtf-roadmap-line-holder.rightTransform {
+                                transform: translateX(-283.05px);
+                            }
+                            .edgtf-roadmap-line-holder.leftTransform {
+                                transform: translateX(283.05px);
+                            }
+                        }  
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .roadmap {
+        .edgtf-elements-holder {
+            .edgtf-eh-item {
+                .edgtf-eh-item-inner {
+                    .edgtf-eh-item-content {
+                        .edftf-roadmap {
+                            .edgtf-roadmap-line {
+                                .edgtf-rl-arrow-left {
+
+                                }
+                                .edgtf-rl-arrow-right {
+
+                                }
+                            }
+                            .edgtf-roadmap-line-holder {
+                                .edgtf-roadmap-item {
+                                    width: 319.48px;
+                                    .edgtf-roadmap-item-circle-holder {
+                                        .edgtf-roadmap-item-before-circle {
+
+                                        }
+                                        .edgtf-roadmap-item-circle {
+
+                                        }
+                                        .edgtf-roadmap-item-after-circle {
+
+                                        }
+                                    }
+                                    .edgtf-roadmap-item-stage-title-holder {
+
+                                    }
+                                    .edgtf-roadmap-item-content-holder {
+                                        
+                                    }
+                                }
+                            }
+                            .edgtf-roadmap-line-holder.rightTransform {
+                                transform: translateX(-319.48px);
+                            }
+                            .edgtf-roadmap-line-holder.leftTransform {
+                                transform: translateX(319.48px);
+                            }
+                        }  
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 575px) {
+    .roadmap {
+        .edgtf-elements-holder {
+            .edgtf-eh-item {
+                .edgtf-eh-item-inner {
+                    .edgtf-eh-item-content {
+                        .edftf-roadmap {
+                            padding-top: 120px;
+                            padding-bottom: 1200px;
+                            .edgtf-roadmap-line-holder {
+                                .edgtf-roadmap-item {
+                                    width: 365.05px;
+                                    .edgtf-roadmap-item-content-holder {
+                                        height: 170px;
+                                        
+                                        div {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }  
+                    }
+                }
+            }
+        }
+    }
+}

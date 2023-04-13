@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/h2-custom-icon-img-1.png" />
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+     <!-- HTML Meta Tags -->
+    <title>Very fast premium Car rental, 24/7 | Hulk Cars</title>
+    <meta name="description" content="First site in the world for rental in the form of tokenization of cars and boats.">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="http://hulkcars.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Very fast premium Car rental, 24/7 | Hulk Cars">
+    <meta property="og:description" content="First site in the world for rental in the form of tokenization of cars and boats.">
+    <meta property="og:image" content="http://hulkcars.com/Group.svg">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="hulkcars.com">
+    <meta property="twitter:url" content="http://hulkcars.com/">
+    <meta name="twitter:title" content="Very fast premium Car rental, 24/7 | Hulk Cars">
+    <meta name="twitter:description" content="First site in the world for rental in the form of tokenization of cars and boats.">
+    <meta name="twitter:image" content="http://hulkcars.com/Group.svg">
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+  <style>
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 100;
+      src: url(https://fonts.gstatic.com/s/lato/v23/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
+    }
+    
+    @font-face {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 100;
+        src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCFPrEHJA.woff2) format('woff2');
+    }
+    
+    @font-face {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 100;
+        src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw0aXpsog.woff2) format('woff2');
+    }
+    .reveal{
+      position: relative;
+      transform: translateY(150px);
+      opacity: 0;
+      transition: 1s all ease;
+    }
+
+    .reveal-right{
+      position: relative;
+      transform: translateX(300px);
+      opacity: 0;
+      transition: 2s all ease;
+    }
+
+    .reveal-left{
+      position: relative;
+      transform: translateX(-300px);
+      opacity: 0;
+      transition: 2s all ease;
+    }
+
+    .reveal-top{
+      position: relative;
+      transform: translateY(-300px);
+      opacity: 0;
+      transition: 1s all ease;
+    }
+    
+    .reveal-active{
+      transform: translateY(0);
+      opacity: 1;
+    }
+  </style>
+</html>

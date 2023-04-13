@@ -1,0 +1,60 @@
+.advisors-board {
+    display: flex;
+    justify-content: space-around;
+    
+    .profile {
+        padding: 10px;
+        text-align: center;
+
+        img:hover {
+            cursor: pointer;
+        }
+
+        .name {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 100;
+            font-size: 20px;
+            line-height: 26px;
+            color: #FFFFFF;
+        }
+
+        .job {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 100;
+            font-size: 13px;
+            line-height: 17px;
+            color: #ACEB2F;
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .advisors-board {
+        justify-content: flex-start;
+        .content {
+            width: 33.3333%;
+            .profile {
+                 img {
+                     width: 226.66px;
+                     height: 226.66px;
+                 }
+            } 
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .advisors-board {
+        .content {
+            width: 100%;
+            .profile {
+                 img {
+                     width: 226.66px;
+                     height: 226.66px;
+                 }
+            } 
+        }
+    }
+}

@@ -1,0 +1,99 @@
+.hulk-feature {
+    // align-items: center;
+
+    .feature-item {
+        h5 {
+            font-size: 25px;
+            font-family: "Montserrat";
+            font-weight: 400;
+            line-height: 30px;
+            color: #FFFFFF;
+        }
+        p {
+            font-size: 15px;
+            font-weight: 100!important;
+            line-height: 30px;
+            font-family: "Montserrat";
+            color: #888888;
+        }
+    }
+
+    .feature1 {
+        width: 34%;
+        float: left;
+
+        .feature-item {
+            text-align: right;
+            img {
+                margin-right: 20px;
+            }
+            
+        }
+    }
+
+    .feature-production {
+        width: 32%;
+        text-align: center;
+    }
+
+    .feature2 {
+        width: 34%;
+        float: right;
+
+        .feature-item {
+            text-align: left;
+            img {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+@media(max-width: 1024px) {
+    .hulk-feature {
+        .feature-production {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .hulk-feature {
+        flex-direction: column;
+        .feature1, .feature2 {
+            width: 100%;
+            order: 2;
+            .feature-item {
+                float: left;
+                text-align: left;
+            }
+        }
+        .feature-production {
+            width: 100%;
+            order: 1;
+            img {
+                width: 50%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 390px) {
+    .hulk-feature {
+        flex-direction: column;
+        .feature1, .feature2 {
+            width: 100%;
+            order: 2;
+            .feature-item {
+                float: left;
+                text-align: left;
+            }
+        }
+        .feature-production {
+            width: 100%;
+            order: 1;
+        }
+    }
+}
